@@ -125,7 +125,7 @@ def load_data_to_mysql(**kwargs):
 
         conn.execute(query)
 
-        # new_data.to_sql(name='deals_stats', con=conn, if_exists='append', index=False)
+        new_data.to_sql(name='deals_stats', con=conn, if_exists='append', index=False)
 
 
 def define_steps_to_end_of_week(**kwargs):
